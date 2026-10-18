@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3e927d">
+    <title>Pocket Town 3D — A Winter Promise</title>
+    <script type="module" crossorigin src="./assets/index-DA8sHRxV.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/brain-CAPv-IiF.js">
+    <link rel="modulepreload" crossorigin href="./assets/simulation-B4HlTcxW.js">
+    <link rel="modulepreload" crossorigin href="./assets/engine-BB-2mU6-.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-Bi8BimCx.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="scene"></div>
+      <header>
+        <div class="logo"><b>POCKET TOWN <em>3D</em></b><small>REAL CONNECTOMES, LIVES</small></div>
+        <div id="stats"></div>
+        <nav aria-label="Game controls">
+          <button id="home" title="Main menu">Home</button><button id="society" title="Community report">👥 Society</button>
+          <button id="minds" title="What is running in their heads">🧠 Brains</button>
+          <button id="about" aria-label="About this game" title="About the game, research and resources">ⓘ</button>
+          <button id="pause" title="Pause simulation">⏸</button>
+          <button id="speed" title="Simulation speed">1×</button>
+          <button id="fullscreen" title="Fullscreen">⛶</button>
+        </nav>
+      </header>
+      <aside id="panel" class="hidden" aria-label="Interaction panel"></aside>
+      <aside id="mind" class="hidden" aria-label="The mind you are inside"></aside>
+      <div id="toast" role="status" aria-live="polite"></div>
+      <div id="help">Drag orbit · scroll zoom · WASD walk · E interact · <b>V</b> enter a mind · <b>F</b> take their motor loop · <b>R</b> praise · <b>C</b> condemn · Esc out</div>
+      <main id="start"><div class="landing-shell">
+<nav class="landing-nav"><b>POCKET TOWN <em>3D</em></b><a href="#modes">Choose your life</a><a href="#landing-about">Behind the town</a></nav>
+<section class="landing-hero"><small>A SMALL PLACE. A THOUSAND POSSIBILITIES.</small><h1>Every neighbour<br>has a <em>story.</em></h1><p>Make a living. Earn their trust. Learn what they are hiding.<br>A living village with two ways to step inside.</p><a class="landing-cta" href="#modes">Find your place in town ↓</a><div class="hero-village" aria-hidden="true"><i>⌂</i><i>⌂</i><i>⌂</i></div></section>
+<section id="modes" class="mode-grid"><article><small>01 / LIVE THE STORY</small><h2>A Winter Promise</h2><p>A first person village mystery. Work for your supper, repair the town, trade with neighbours and uncover the missing grain. Trust the wrong person and you may be betrayed.</p><ul><li>Fifty connected main story chapters with consequential choices</li><li>Local GLB villagers, free movement, mouse look, and mobile touch controls</li><li>Visible kindness and betrayal odds, evolving trust, supplies, and evidence</li></ul><div class="mode-actions"><button id="new-story">New story →</button><button id="continue-story">Continue story</button></div><button id="import-story">Import story save</button><input id="save-file" type="file" accept=".json,application/json" hidden><p id="save-message" role="status"></p><div id="import-confirm" hidden><p>Replace your story slot with this imported save?</p><button id="confirm-import">Import and replace</button><button id="cancel-import">Cancel</button></div><small>Independent story save · replay whenever you like</small><div id="replace-story" hidden><p>Replace your existing story? The observation town save is kept.</p><button id="confirm-new">Replace and begin</button><button id="cancel-new">Cancel</button></div></article>
+<article><small>02 / WATCH THE MINDS</small><h2>The Living Sandbox</h2><p>Observe twelve residents whose movement and needs are influenced by a simplified C. elegans neural model. Follow their routines, trade and relationships, or enter a resident’s viewpoint.</p><ul><li>Orbit view and a living community</li><li>Neural activity, reward and punishment</li><li>Your existing sandbox progress is preserved</li></ul><button id="play">Enter observation town →</button><small>Original town save · continues your previous session</small></article></section>
+<section class="landing-explainer"><small>ONE VILLAGE. TWO LENSES.</small><h2>Live a mystery.<br>Observe a system.</h2><p>The story mode uses authored characters, choices and consequences. The observation mode explores simplified biological networks and social rules. Both inhabit the same town layout, with separate progress so each can be revisited.</p></section>
+<section id="landing-about"></section><footer>POCKET TOWN 3D · Built for curiosity. Played at your own pace.<br>Progress is stored in this browser. Use the same address to continue your saves.</footer>
+</div></main>
+    </div>
+    <noscript>This game needs JavaScript. Enable JavaScript and open Start Game.cmd.</noscript>
+    <script>
+      if (location.protocol === 'file:') {
+        document.querySelector('#start p').textContent = 'To play this multi-file game, close this page and double-click Start Game.cmd in the game folder. It opens a local preview with all game files loaded.';
+        document.getElementById('play').textContent = 'Use Start Game.cmd to play';
+        document.getElementById('play').disabled = true;
+      }
+    </script>
+  </body>
+</html>
